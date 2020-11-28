@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <title>flower Training Accuracy</title>
+  </head>
+  <body>
+
+
+    <h3 id="waiting-msg">Waiting for server...</h3>
+    <p>
+    <span style="font-size:16px" id="trainingStatus"></span>
+    <p>
+    <div id="predictContainer" style="font-size:16px;display:none">
+      flower data: <span id="predictSample"></span>
+      <button style="font-size:18px;padding:5px;margin-right:10px" id="predict-button">Predict flower</button><p>
+      Predicted flower Type: <span style="font-weight:bold" id="predictResult"></span>
+      
+    </div>
+    <div id="userPredictContainer" style="font-size:16px;display:none">
+      user flower data: <span id="userPredictSample"></span>
+      <button style="font-size:18px;padding:5px;margin-right:10px;color:green;" id="user-predict-button">Predict user flower</button><p>
+      user Predicted flower Type: <span style="font-weight:bold" id="userPredictResult"></span>
+    </div>
+    <div id="sliderInputStuff" />   
+    <div>
+      <div id="d3_flower_stuff" />
+      <table border="2">
+        <tbody>
+          <thead>
+              <tr>
+                  <th colspan="2">USER INPUT FLOWER</th>
+              </tr>
+          </thead>
+          <tr>
+            <td>
+              SEPAL LENGTH
+            </td>
+            <td id="SEPAL_LENGTH_Input">
+              n/a
+            </td>
+          </tr>
+          <tr>
+            <td>
+              SEPAL WIDTH
+            </td>
+            <td id="SEPAL_WIDTH_Input">
+              n/a
+            </td>
+          </tr>
+          <tr>
+            <td>
+              PETAL LENGTH
+            </td>
+            <td id="PETAL_LENGTH_Input">
+              n/a
+            </td>
+          </tr>
+          <tr>
+            <td>
+              PETAL WIDTH
+            </td>
+            <td id="PETAL_WIDTH_Input">
+              n/a
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+    <script src="dist/bundle.js"></script>
+    <style>
+      html,
+      body {
+        font-family: Roboto, sans-serif;
+        color: #5f6368;
+      }
+      body {
+        background-color: rgb(248, 249, 250);
+      }
+    </style> 
+  </body>
+</html>
